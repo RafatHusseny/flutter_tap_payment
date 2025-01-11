@@ -22,7 +22,6 @@ class TapServices {
         'Accept': 'application/json',
         'Content-Type': 'application/json; charset=UTF-8',
       });
-
       var body = json.decode(response.body);
       if (response.statusCode == 200) {
         debugPrint(jsonEncode(body));
