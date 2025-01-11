@@ -19,14 +19,14 @@ class TapPayment extends StatefulWidget {
   final Map paymentData;
 
   const TapPayment({
-    Key? key,
+    super.key,
     required this.onSuccess,
     required this.onError,
     required this.apiKey,
     required this.redirectUrl,
     required this.postUrl,
     required this.paymentData,
-  }) : super(key: key);
+  });
 
   @override
   State<StatefulWidget> createState() {

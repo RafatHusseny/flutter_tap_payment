@@ -25,7 +25,7 @@ class TapServices {
 
       var body = json.decode(response.body);
       if (response.statusCode == 200) {
-        debugPrint(body);
+        debugPrint(jsonEncode(body));
         return {'error': false, 'message': body};
       } else {
         String message = body["errors"]?[0]?["description"];
